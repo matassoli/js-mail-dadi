@@ -14,3 +14,15 @@ for (var i = 0; i < mails.length; i++) {
     document.getElementById("lista").innerHTML = "Sei";
   }
 }
+
+
+
+var userNumber = Math.floor(Math.random() * 6 + 1);
+var pcNumber = Math.floor(Math.random() * 6 + 1);
+if (userNumber > pcNumber) {
+  document.getElementById("dadi").innerHTML = "Hai vinto!";
+} else if (userNumber < pcNumber) {
+  document.getElementById("dadi").innerHTML = "Hai perso!";
+} else if (userNumber == pcNumber) {
+  document.getElementById("dadi").innerHTML = "Pareggio!";
+}
